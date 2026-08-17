@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Todo Application</h1>
+
+    <div class="input-box">
+      <input type="text" id="todoInput" placeholder="Enter a task">
+      <button onclick="addTodo()">Add</button>
+    </div>
+
+    <div class="filters">
+      <button onclick="filterTodos('all')">All</button>
+      <button onclick="filterTodos('active')">Active</button>
+      <button onclick="filterTodos('completed')">Completed</button>
+    </div>
+
+    <ul id="todoList"></ul>
+
+    <div class="bottom">
+      <span id="count">0 tasks</span>
+      <button onclick="clearCompleted()">Clear Completed</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
